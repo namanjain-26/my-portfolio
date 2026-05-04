@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naman Jain | BTech Biotechnology Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- CANVAS BACKGROUND -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">NJ<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+      <li><a href="#certifications" onclick="closeMobileMenu()">Certifications</a></li>
+      <li><a href="#cv" onclick="closeMobileMenu()">CV</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        1st Year · 2nd Semester · LPU
+      </div>
+      <h1 class="hero-name reveal">
+        Naman<br /><span class="gradient-text">Jain</span>
+      </h1>
+      <p class="hero-title reveal">BTech Biotechnology Student &nbsp;·&nbsp; Aspiring Bioinformatics Scientist</p>
+      <p class="hero-tagline reveal">"Passionate about Genomics, Stem Cells, and Computational Biology"</p>
+      <p class="hero-intro reveal">I am a first-year biotechnology student focused on building skills in bioinformatics,
+        data analysis, and computational biology to solve real-world medical challenges.</p>
+      <div class="hero-btns reveal">
+        <a href="cv.pdf" target="_blank" class="btn-primary">
+          <i class="fa-solid fa-file-lines"></i> View My CV
+        </a>
+        <a href="#contact" class="btn-ghost">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:naman@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-dna reveal">
+      <canvas id="dnaCanvas"></canvas>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label reveal">/ About Me</div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-core">
+            <i class="fas fa-dna"></i>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">7.0</span>
+            <span class="stat-label">Sem 1 CGPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Target CGPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2025</span>
+            <span class="stat-label">Batch</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h2>Building a Future at the Intersection of <span class="gradient-text">Biology & Code</span></h2>
+        <p>I'm <strong>Naman Jain</strong>, a first-year BTech Biotechnology student at <strong>Lovely Professional
+            University</strong>, currently in my 2nd semester. I've always been fascinated by how life works at a
+          molecular level — and now, I'm learning to decode it with computation.</p>
+        <p>My core interest lies in <strong>bioinformatics, genomics, and stem cell research</strong>. I believe
+          diseases like leukemia can be better understood and tackled through computational approaches — and I want to
+          be part of that mission.</p>
+        <p>I'm actively learning <strong>Python and data analysis tools</strong>, building a strong foundation to become
+          a Bioinformatics Data Scientist. Every lecture, every experiment, every line of code is a step toward that
+          goal.</p>
+        <div class="about-tags">
+          <span>Bioinformatics</span>
+          <span>Genomics</span>
+          <span>Python</span>
+          <span>Stem Cells</span>
+          <span>Data Analysis</span>
+          <span>Leukemia Research</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION TIMELINE -->
+    <div class="section-sublabel reveal">/ Education</div>
+    <div class="timeline reveal">
+      <div class="timeline-item active">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <h3>BTech Biotechnology</h3>
+              <span class="tl-school">Lovely Professional University</span>
+            </div>
+            <span class="tl-year">2025 – Present</span>
+          </div>
+          <div class="tl-details">
+            <span class="tl-badge current">Current: 2nd Semester</span>
+            <span class="tl-badge gpa">Sem 1 CGPA: 7.0</span>
+            <span class="tl-badge target">Target: 8+ CGPA</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <h3>Senior Secondary (12th)</h3>
+              <span class="tl-school">Global Public School</span>
+            </div>
+            <span class="tl-year">2024</span>
+          </div>
+          <div class="tl-details">
+            <span class="tl-badge">Science Stream</span>
+            <span class="tl-badge">Physics · Chemistry · Biology</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label reveal">/ Skills</div>
+    <h2 class="section-title reveal">What I <span class="gradient-text">Know & Learn</span></h2>
+
+    <div class="skills-grid">
+      <!-- Current -->
+      <div class="skill-group reveal">
+        <div class="skill-group-header">
+          <span class="sg-icon current-icon"><i class="fas fa-check-circle"></i></span>
+          <h3>Current Skills</h3>
+        </div>
+        <div class="skill-cards">
+          <div class="skill-card">
+            <i class="fas fa-microscope"></i>
+            <span>Basic Biology Concepts</span>
+            <div class="skill-bar">
+              <div class="skill-fill" data-w="75"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-computer"></i>
+            <span>Computer Fundamentals</span>
+            <div class="skill-bar">
+              <div class="skill-fill" data-w="80"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-table"></i>
+            <span>MS Excel / Data Handling</span>
+            <div class="skill-bar">
+              <div class="skill-fill" data-w="65"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning -->
+      <div class="skill-group reveal">
+        <div class="skill-group-header">
+          <span class="sg-icon learning-icon"><i class="fas fa-spinner"></i></span>
+          <h3>Learning Now</h3>
+        </div>
+        <div class="skill-cards">
+          <div class="skill-card learning">
+            <i class="fab fa-python"></i>
+            <span>Python Programming</span>
+            <div class="skill-bar">
+              <div class="skill-fill learning-fill" data-w="40"></div>
+            </div>
+          </div>
+          <div class="skill-card learning">
+            <i class="fas fa-chart-line"></i>
+            <span>Data Analysis</span>
+            <div class="skill-bar">
+              <div class="skill-fill learning-fill" data-w="35"></div>
+            </div>
+          </div>
+          <div class="skill-card learning">
+            <i class="fas fa-chart-bar"></i>
+            <span>Data Visualization</span>
+            <div class="skill-bar">
+              <div class="skill-fill learning-fill" data-w="30"></div>
+            </div>
+          </div>
+          <div class="skill-card learning">
+            <i class="fas fa-dna"></i>
+            <span>Bioinformatics Tools</span>
+            <div class="skill-bar">
+              <div class="skill-fill learning-fill" data-w="25"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Future -->
+      <div class="skill-group reveal">
+        <div class="skill-group-header">
+          <span class="sg-icon future-icon"><i class="fas fa-rocket"></i></span>
+          <h3>Future Focus</h3>
+        </div>
+        <div class="skill-cards future-pills">
+          <div class="future-pill"><i class="fas fa-brain"></i> ML in Biology</div>
+          <div class="future-pill"><i class="fas fa-dna"></i> Genomic Data Analysis</div>
+          <div class="future-pill"><i class="fas fa-code"></i> R Programming</div>
+          <div class="future-pill"><i class="fas fa-robot"></i> AI in Healthcare</div>
+          <div class="future-pill"><i class="fas fa-chart-pie"></i> Predictive Analytics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label reveal">/ Projects & Experience</div>
+    <h2 class="section-title reveal">What I've <span class="gradient-text">Built & Explored</span></h2>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Laser Security System</h3>
+        <p class="project-sub">Hardware Mini-Project</p>
+        <p>Designed and assembled a basic security alarm system using an LDR (Light Dependent Resistor) sensor. When the
+          laser beam is broken, the circuit triggers an alert — demonstrating fundamentals of electronics and
+          sensor-based systems.</p>
+        <div class="project-tags">
+          <span>LDR Sensor</span><span>Circuit Design</span><span>Electronics</span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-flask"></i></div>
+        <h3>Academic Lab Exposure</h3>
+        <p class="project-sub">1st Year Laboratory Work</p>
+        <p>Hands-on experience in university biology and chemistry labs. Practiced fundamental techniques including
+          microscopy, biological staining, and basic chemical reactions relevant to biotechnology fundamentals.</p>
+        <div class="project-tags">
+          <span>Microscopy</span><span>Lab Techniques</span><span>Biotechnology</span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Self-Learning: Computational Biology</h3>
+        <p class="project-sub">Ongoing Self-Study</p>
+        <p>Actively pursuing online resources, courses, and reading materials on Python, bioinformatics concepts, and
+          data science fundamentals. Building a structured roadmap toward computational biology proficiency.</p>
+        <div class="project-tags">
+          <span>Python</span><span>Bioinformatics</span><span>Self-Paced</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section-sublabel reveal">/ Achievements</div>
+    <div class="achievements-row reveal">
+      <div class="achieve-item">
+        <i class="fas fa-award"></i>
+        <p>Strong academic background in Science stream with consistent performance</p>
+      </div>
+      <div class="achieve-item">
+        <i class="fas fa-sync-alt"></i>
+        <p>Continuous learning mindset — always exploring new tools and concepts</p>
+      </div>
+      <div class="achieve-item">
+        <i class="fas fa-users"></i>
+        <p>Active participation in university learning programs and peer study groups</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="section-label reveal">/ Certifications</div>
+    <h2 class="section-title reveal">Credentials &amp; <span class="gradient-text">Recognition</span></h2>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-ribbon">Completed</div>
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Introduction to Python</h3>
+        <p class="cert-issuer"><i class="fas fa-building"></i> Coursera / Add Issuer</p>
+        <p class="cert-date">Date: Add Date</p>
+        <a href="python-cert.pdf" target="_blank" class="cert-btn">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-ribbon">Completed</div>
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Data Analysis Basics</h3>
+        <p class="cert-issuer"><i class="fas fa-building"></i> Add Issuer</p>
+        <p class="cert-date">Date: Add Date</p>
+        <a href="data-analysis-cert.pdf" target="_blank" class="cert-btn">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      <div class="cert-card reveal ongoing">
+        <div class="cert-ribbon ongoing-ribbon">In Progress</div>
+        <div class="cert-icon pulse-icon"><i class="fas fa-spinner fa-spin"></i></div>
+        <h3>Bioinformatics Specialization</h3>
+        <p class="cert-issuer"><i class="fas fa-building"></i> Coursera / UC San Diego</p>
+        <p class="cert-date">Expected: 2025</p>
+        <span class="cert-btn ongoing-btn"><i class="fas fa-clock"></i> Ongoing</span>
+      </div>
+      <div class="cert-card reveal ongoing">
+        <div class="cert-ribbon ongoing-ribbon">In Progress</div>
+        <div class="cert-icon pulse-icon"><i class="fas fa-spinner fa-spin"></i></div>
+        <h3>Python for Data Science</h3>
+        <p class="cert-issuer"><i class="fas fa-building"></i> IBM / edX</p>
+        <p class="cert-date">Expected: 2025</p>
+        <span class="cert-btn ongoing-btn"><i class="fas fa-clock"></i> Ongoing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section id="interests">
+    <div class="section-label reveal">/ What Drives Me</div>
+    <h2 class="section-title reveal">Passions &amp; <span class="gradient-text">Interests</span></h2>
+    <div class="interests-grid reveal">
+      <div class="interest-item">
+        <div class="interest-icon"><i class="fas fa-dna"></i></div>
+        <span>Bioinformatics</span>
+      </div>
+      <div class="interest-item">
+        <div class="interest-icon"><i class="fas fa-microscope"></i></div>
+        <span>Genomics</span>
+      </div>
+      <div class="interest-item">
+        <div class="interest-icon"><i class="fas fa-seedling"></i></div>
+        <span>Stem Cell Research</span>
+      </div>
+      <div class="interest-item">
+        <div class="interest-icon"><i class="fas fa-laptop-code"></i></div>
+        <span>Computational Biology</span>
+      </div>
+      <div class="interest-item">
+        <div class="interest-icon"><i class="fas fa-brain"></i></div>
+        <span>Data Science & AI</span>
+      </div>
+      <div class="interest-item">
+        <div class="interest-icon"><i class="fas fa-globe-asia"></i></div>
+        <span>Geopolitical Analysis</span>
+      </div>
+      <div class="interest-item">
+        <div class="interest-icon"><i class="fas fa-chess-knight"></i></div>
+        <span>Chess</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV SECTION -->
+  <section id="cv">
+    <div class="cv-container reveal">
+      <div class="cv-glow"></div>
+      <div class="cv-content">
+        <div class="cv-icon"><i class="fas fa-file-lines"></i></div>
+        <h2>My Curriculum <span class="gradient-text">Vitae</span></h2>
+        <p>A snapshot of my academic journey, skills, and aspirations — crafted with honesty and forward vision.</p>
+        <div class="cv-btns">
+          <a href="CV.pdf" target="_blank" class="btn-primary">
+            <i class="fas fa-eye"></i> View CV
+          </a>
+          <a href="CV.pdf" download class="btn-ghost">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label reveal">/ Contact</div>
+    <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Reach Out</h3>
+        <p>Whether you're a fellow student, recruiter, or researcher — I'm open to conversations, collaborations, and
+          learning opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:namanj2k06@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span class="cl-label">Email</span>
+              <span class="cl-val">namanj2k06@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin-in"></i>
+            <div>
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-val">linkedin.com/in/namanjain</span>
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i>
+            <div>
+              <span class="cl-label">GitHub</span>
+              <span class="cl-val">github.com/namanjain</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="e.g. Dr. Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Let's talk about..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">NJ<span class="dot">.</span></div>
+      <p>Designed &amp; Built by <strong>Naman Jain</strong></p>
+      <p class="footer-sub">BTech Biotechnology · LPU · 2025</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:naman@email.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
